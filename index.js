@@ -1,4 +1,29 @@
-// khai báo biến time 10
+//BAI 2 gia tien rand 100 - 5tr
+// bien numOfOrder = 5 (mua 5 món)
+// Total
+// For, 1 gia ran cho sp, cộng dồn vào total
+// in tong tien phai tra
+let total = 0;
+
+
+for(let numOfOrder = 5; numOfOrder>=1; numOfOrder--){
+    let price = Math.round((Math.random()*5000000))
+if (price < 100000){
+    price = 100000
+}
+    console.log(`Tổng tiền phải trả là ${total+price} `)
+}
+
+// random (0,1) (Math.round(Math.random()))
+// 0: không giảm 1: giảm giá random tử 10 -50%
+
+
+
+
+
+
+
+// BÀI 1: khai báo biến time 10
 // lopp while dk time > 0
 // time === 5; in đã qua 1/2 thời gian
 // còn lại: còn time giây
@@ -14,14 +39,14 @@
 // } 
 // console.log(`Hết giờ `)
 
-let time = 41;
-let halftime= Math.round (time/2);
-while (time > 0) {
-  if (time == halftime) {
-    console.log("Đã qua nửa thời gian");
-  } else {
-    console.log(`Còn lại ${time} giây`);
-  }
-  time--;
-}
-console.log("Đã hết giờ ");
+// let time = 41;
+// let halftime= Math.round (time/2);
+// while (time > 0) {
+//   if (time == halftime) {
+//     console.log("Đã qua nửa thời gian");
+//   } else {
+//     console.log(`Còn lại ${time} giây`);
+//   }
+//   time--;
+// }
+// console.log("Đã hết giờ ");
