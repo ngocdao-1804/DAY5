@@ -6,18 +6,18 @@
 
 // let time = 10;
 // while (time > 0) {
-//     console.log(`còn ${time} giây`)
 //     time--;
+//     console.log(`còn ${time} giây`)
 //     if (time === 5) {
 //         console.log(`đã qua nửa thời gian`)
 //     }
 // } 
 // console.log(`Hết giờ `)
 
-let time = 20;
-let halftime= time/2;
+let time = 41;
+let halftime= Math.round (time/2);
 while (time > 0) {
-  if (time === halftime) {
+  if (time == halftime) {
     console.log("Đã qua nửa thời gian");
   } else {
     console.log(`Còn lại ${time} giây`);
